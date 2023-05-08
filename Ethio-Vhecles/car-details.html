@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 100px;
+            padding: 100px;
+            flex-wrap: wrap;
+        }
+        .images{
+                margin: auto;
+                width: 100%;
+                margin-top: 0;
+        }
+        
+        img{
+            width: 400px;
+            height: 240px;
+            padding: 70px;
+            
+            transform:scale(130%);
+        }
+        h1{
+            font-size: 50px;
+            margin-top: -170px;
+        }
+        p{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="carDetails"></div>
+    <script src="cars.js"></script>
+    <script>
+        function renderCar(car){
+            var carDetails = document.getElementById("carDetails")
+            carDetails.innerHTML = `
+            <div class="card">
+                <img src="${car.image}" alt="">
+                <div class="text">
+                    <h2>${car.name}</h2>
+                        <h3>$${car.price}</h3>
+                    <p>
+                        ${car.description}
+                        ...
+                    </p>
+                    <div class="ul">
+                        <a href="bat-car?id=${car.id}">Buy</a>
+                        <a href="car-details.html?id=${car.id}">More info</a>
+                    </div>
+                </div>
+            </div>
+            `
+            
+        }
+       
+        
+        
+        document.addEventListener("load",()=>{
+            var carId = Number(window.location.search.split("=")[1])
+            var car = cars.find((car)=>car.id === carId)
+
+            if (car){
+    
+                renderCar(car)
+            }
+        })
+    </script>
+</body>
+</html>
