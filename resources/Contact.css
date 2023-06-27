@@ -1,0 +1,57 @@
+
+:root{
+  --bg-color:#acbdce;
+}
+
+body{
+  background: var(--bg-color);
+
+}
+  /* Navbar styles */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+  }
+
+  body {
+    margin-top: 50px;
+    margin-bottom: 100px; /* Add margin to body to prevent content from overlapping with the fixed navbar */
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  /* Header styles */
+  header {
+    text-align: center;
+    padding: 50px;
+    color: #0715da;
+		background-color: #1f2029;
+	  }
+
+
+
+
+
+
+
+
+
+    

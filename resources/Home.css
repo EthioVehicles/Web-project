@@ -1,0 +1,297 @@
+*{
+  padding: 0;
+  margin: 0;
+  
+  
+}
+.fixed-header{
+width: 100%;
+height: 15%;
+position: fixed;        
+z-index: 5;
+}
+#navbar{
+  
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  display: inline-block;
+  flex-direction: row;
+  z-index: 5;
+ 
+  text-align: right;
+  
+}
+#navbar ul{
+  
+  background-color: #333;
+  color: #caafaf;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 25px ;
+}
+
+li{
+  position: static;
+
+  padding-left: 100px;
+  margin-left: 50px;
+ 
+  
+  
+}
+li a{
+  text-decoration: none;
+  color: #fdf7f7;
+  transition: 0.5s;
+}
+
+
+
+/*header css ends*/
+
+
+
+
+
+
+
+
+
+
+.main{
+  width: 100%;
+  background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(image/carr2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  
+  
+  
+  }
+  
+.content{
+  width: 1200px;
+  height: auto;
+  margin: auto;
+  color: #fff;
+  position: relative;
+  }
+  .content .par{
+  padding-top: 20px;
+  margin-left: 50px;
+  padding-bottom: 5px;
+  font-family: Arial;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+  }
+  .content h1{
+  padding-top: 200px;
+  font-family: 'Times New Roman';
+  font-size: 50px;
+  
+  margin-top: 0%;
+  letter-spacing: 2px;
+  }
+  .content .cn{
+  width: 160px;
+  height: 40px;
+  background: #ff7200;
+  border: none;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  }
+  .content .cn a{
+  text-decoration: none;
+  color: #000;
+  transition: .3s ease;
+  
+  }
+  .cn:hover{
+  background-color: #e4490c;
+  
+  }
+  .content span{
+  color: #ff7200;
+  font-size: 65px;
+  
+  }
+  
+  /*PARAGRAPH*/
+
+
+
+
+
+ 
+
+
+  
+.article h1::after{
+  content: '';
+  background-color: #007bff;
+  display: block;
+  height: 3px;
+  width: 250px;
+  margin: 20px auto 5px;
+}
+.article a{
+   list-style: none;
+   color: #000;
+   outline: none;
+   text-decoration: none !important;
+}
+.article a:hover{
+   color: yellowgreen;
+   transition: 0.3s;
+}
+.article p{
+   font-size: 21px;
+   padding: 10px;
+}
+.article span{
+   color: yellowgreen;
+}
+.article .card{
+  padding: 5px;
+}
+
+#cost{
+   margin-left: 250px;
+   margin-top: -55px;
+   font-size: 20px;
+   color: orange;
+}
+#name{
+   padding: 10px;
+}
+small{
+  padding: 10px;
+}
+small a{
+  height: 70px;
+  width: 200px;
+  border: none;
+  outline: none;
+  background: #eee;
+  font-weight: 900;
+  margin-top: 30px;
+  text-decoration: none !important;
+  padding: 5px;
+}
+
+/* End Of New Product  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/* Styles for the About Section */
+#about {
+  padding: 60px 0;
+  border: 2px solid #000;
+  border-collapse: collapse;
+  }
+  
+  #about .container {
+  border: 2px solid #000;
+  }
+  
+  
+  
+  .about-info {
+  padding-left: 20px;
+  }
+  
+  .skill-mf {
+  margin-top: 30px;
+  }
+  
+  .title-s {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  }
+  
+  .progress {
+  height: 10px;
+  margin-bottom: 20px;
+  }
+  
+  .progress-bar {
+  background-color: #4d4d4d;
+  }
+  
+  .title-left {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  }
+  
+  .about-me ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+  .about-img {
+    margin-bottom: 30px;
+  }
+  
+  .about-info {
+    padding-left: 0;
+  }
+  }
+  
+
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  footer h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  footer p {
+    margin-bottom: 10px;
+  }
+  
+  footer ul.list-unstyled {
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer ul.list-unstyled li {
+    margin-bottom: 10px;
+  }
+  
+  footer ul.list-unstyled li a {
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  footer ul.list-unstyled li a i {
+    margin-right: 5px;
+    font-size: 18px;
+  }

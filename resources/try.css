@@ -1,0 +1,10 @@
+.gallery-container {
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+}
